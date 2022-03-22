@@ -10,7 +10,7 @@ Steps to setup the project:
 
 
 To run the django app:
-`OTEL_LOG_LEVEL=debug gunicorn -c NGANROCIAPI/gunicorn.py NGANROCIAPI.wsgi`
+`PYTHONPATH=<your-python-path> OTEL_LOG_LEVEL=debug gunicorn -c NGANROCIAPI/gunicorn.py NGANROCIAPI.wsgi`
 
 To check the test API endpoint: `curl http://localhost:10500/health -kv`
 
