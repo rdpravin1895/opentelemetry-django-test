@@ -1,0 +1,13 @@
+export DJANGO_SETTINGS_MODULE=NGANROCIAPI.settings
+
+export GUNICORN_WORKER_TEMP_DIR="/tmp"
+
+export OTEL_PYTHON_ID_GENERATOR="xray"
+
+export OTEL_PROPAGATORS="xray"
+
+export OTEL_TRACES_EXPORTER="otlp"
+
+export OTEL_EXPORTER_OTLP_ENDPOINT="http://localhost:4317"
+
+export OTEL_SERVICE_NAME="fds-api"
